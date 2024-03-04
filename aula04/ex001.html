@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ola, mundo em javascript!</title>
+    <style>
+        body {
+            background-color: #6969ad;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <script>
+        window.alert('Minha Primeira Mensagem!')
+        gostando = window.confirm('Está gostando de JS?') ? alert('Legal, eu também estou! :D ') : alert('Poxa :(')  
+
+        nome = window.prompt('Qual é seu nome?')
+        document.body.innerHTML += "<p>Olá, " + nome + "!</p>"
+    </script>
+</body>
+</html>
