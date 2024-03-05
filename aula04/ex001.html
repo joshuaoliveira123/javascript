@@ -16,7 +16,18 @@
     <h1>Olá, Mundo!</h1>
     <script>
         window.alert('Minha Primeira Mensagem!')
+        
+        // Feito usando ternário:
         gostando = window.confirm('Está gostando de JS?') ? alert('Legal, eu também estou! :D ') : alert('Poxa :(')  
+
+        // É possivel fazer o mesmo procedimento usando estrutura if-else:
+        // 
+        // gostando = window.confirm('Está gostando de JS?')
+        // if (gostando) {
+        //   alert('Legal, eu também estou! :D')
+        // } else {
+        //   alert('Poxa :(')
+        // }
 
         nome = window.prompt('Qual é seu nome?')
         document.body.innerHTML += "<p>Olá, " + nome + "!</p>"
