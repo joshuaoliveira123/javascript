@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <style>
+        body {
+            background-color: lightcyan;
+            text-align: center;
+            font: bold 1em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        h1 {
+            color: brown;
+            font-variant: small-caps;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            color: darkgoldenrod;
+            font-variant: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <script>
+        var nome = window.prompt("Qual seu nome?")
+        document.writeln(`<p>Olá, ${nome}, seu nome tem ${nome.length} letras</p>`)
+        document.writeln(`<p>Seu nome em MAIÚSCULAS é ${nome.toUpperCase()}</p>`)
+        document.writeln(`<p>Seu nome em minúsculas é ${nome.toLowerCase()}</p>`)
+    </script>
+</body>
+</html>
