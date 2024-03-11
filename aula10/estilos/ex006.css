@@ -26,3 +26,12 @@ body {
     cursor: pointer;
     margin: 5px auto;
 }
+
+input {width: 100px;}
+
+input[type = button] {cursor: pointer;}
+
+#result {
+    font-weight: bold;
+    font-size: 1.3em;
+}
