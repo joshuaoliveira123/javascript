@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos DOM</title>
-    <link rel="stylesheet" href="estilos/ex006.css">
+    <title>Somando Números ...</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <div id="area" class="box">
-        Clique-me ...
-    </div>
-    <div id="area2" class="box">
-        Clique-me ...
-    </div>
+    <h1>Somando Valores!</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Limpar" onclick="limpar()">
+    <div id="result"></div>
+
     <script src="scripts/ex007.js"></script>
 </body>
 </html>
