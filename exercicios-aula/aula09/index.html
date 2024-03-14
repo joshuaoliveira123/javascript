@@ -26,7 +26,7 @@
    <h1>Trabalhando com DOM!</h1>
    <p>Primeiro parágrafo</p>
    <p>Aprendendo a usar o <strong>DOM</strong> em <strong>JavaScript</strong>.</p>
-   <div id="msg">Click em mim!</div>
+   <div id="msg" onclick="clicou()">Click em mim!</div>
    <script>
         var p1 = document.getElementsByTagName('p')[0]
         p1.style.fontVariant = 'small-caps'
@@ -47,6 +47,12 @@
             color: black;
         }
         */
+
+        function clicou() {
+            var teste = window.document.getElementById('msg')
+
+            teste.innerHTML += '<p>Clicou!</p>'
+        }
    </script>
 </body>
 </html>
