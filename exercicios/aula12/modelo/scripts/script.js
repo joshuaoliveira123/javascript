@@ -1,0 +1,1 @@
+window.alert('Alerta! Estou te alertando... ')
