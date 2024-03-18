@@ -55,16 +55,15 @@ header {
 }
 
 .box {
-    text-align: justify;
     padding: 10px 0;
+    line-height: 2em;
 }
 
-.b1 {
-    background-color: transparent;
-}
-
-.b2 {
-    background-color: transparent;
+img {
+    width: clamp(100px, 60vw, 300px);
+    height: clamp(100px, 60vw, 300px);
+    border-radius: 50%;
+    box-shadow: var(--sombra-caixa);
 }
 
 footer {
