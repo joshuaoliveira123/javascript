@@ -10,7 +10,11 @@ function verificarIdade() {
         var radio = document.getElementsByName('radSexo')
         var idade = anoAtual - anoNasc.value
         var genero = ''
+
+        // Criando uma tag <img>
         var imagem = document.createElement('img')
+        
+        // Adicionando atributos a tag <img>: <img id="foto">
         imagem.setAttribute('id', 'foto')
 
         if (radio[0].checked) {
