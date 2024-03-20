@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando positivamente!</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contando positivamente!</h1>
+    </header>
+    <main class="main">
+        <div id="BOX1" class="box b1">
+            <p>
+                <label for="numIni">inicio:</label> 
+                <input type="number" name="numIni" id="numIni"></p>
+            <p>
+                <label for="numFim">fim:</label> 
+                <input type="number" name="numFim" id="numFim"></p>
+            <p>
+                <label for="numSalto">salto:</label> 
+                <input type="number" name="numSalto" id="numSalto"></p>
+            <input type="button" value="Mostrar contagem" onclick="contar()">
+        </div>
+        <div id="BOX2" class="box b2">
+            Preparando contagem ...
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/joshuaoliveira123" target="_blank" rel="author">joshuaoliveira123</a> com o auxílio do <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">Gustavo Guanabara do Curso em Vídeo.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
