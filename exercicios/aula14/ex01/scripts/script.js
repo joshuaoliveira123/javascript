@@ -1,37 +1,45 @@
 function contar() {
-    var ini = Number(document.getElementById('numIni').value)
-    var fim = Number(document.getElementById('numFim').value)
-    var salto = Number(document.getElementById('numSalto').value)
-    var result = document.getElementById('BOX2')
-
-    if (salto == 0) {
-        alert('[AVISO] Número de salto vai ser interpretado como 1!')
-        salto = 1
-    }
-
-    if (ini > fim || salto < 0) {
-        alert('[ERROR] Digite um intervalo possivel para contagem.')
-
-        if (ini > fim) {
-            result.innerHTML = '<p>O número do inicio da contagem é maior que o número final!</p>'
-        }
-
-        if (salto < 0) {
-            result.innerHTML += '<p>O número do salto é negativo. Coloque um número inteiro maior que 0 (zero)!</p>'
-        }
-
-        result.innerHTML += '<p>Lembre-se, estamos realizando a contagem apenas de forma positiva. Exemplo: 0 até 10 pulando de 2 em 2.</p>'
-
+    let result = document.getElementById('BOX2')
+    
+    let ini = document.getElementById('numIni')
+    let fim = document.getElementById('numFim')
+    let salto = document.getElementById('numSalto')
+    
+    if (ini.value.length == 0 || fim.value.length == 0 || salto.value.length == 0) {
+        alert('ERROR | Preencha todos os campos acima!')
     } else {
-        result.innerHTML = ''
-    
-        for (let i = ini; i <= fim; i += salto) {
-            // Da pra simplesmente colocar o emote
-            result.innerHTML += `${i} 👉 `
+        let numIni = Number(ini.value)
+        let numFim = Number(fim.value)
+        let numSalto = Number(salto.value)
+
+        if (numSalto <= 0) {
+            alert('ERROR | Número de salto igual ou menor que 0 (zero). Portanto iremos considera-lo igual a 1!')
+            numSalto = 1
         }
-    
-        // Para colocar usando código: &#x + (código sem o 'U +' do emote em unicode)
-        result.innerHTML += '&#x1F3C1;'
+        
+        // Limpar a div para inserir a contagem
+        result.innerHTML = ''
+
+        if (numIni <= numFim) {
+
+            // Contagem crescente
+            for (let i = numIni; i <= numFim; i += numSalto) {
+                // Da pra usar o código do unicode: \u{code}
+                result.innerHTML += `${i} \u{1f449} `
+            }
+        
+            // Para colocar usando código: &#x + (código sem o 'U +' do emote em unicode)
+            result.innerHTML += '&#x1F3C1;'
+        } else {
+
+            // Contagem regressiva
+            for (let i = numIni; i >= numFim; i -= numSalto) {
+                // Da pra simplesmente colocar o emote
+                result.innerHTML += `${i} 👉 `
+            }
+        
+            // Para colocar usando código: &#x + (código sem o 'U +' do emote em unicode)
+            result.innerHTML += '&#x1F3C1;'
+        }
     }
-    
 }
