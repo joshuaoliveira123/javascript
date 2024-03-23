@@ -15,6 +15,7 @@ function contar() {
         if (numSalto <= 0) {
             alert('ERROR | Número de salto igual ou menor que 0 (zero). Portanto iremos considera-lo igual a 1!')
             numSalto = 1
+            salto.value = 1
         }
         
         // Limpar a div para inserir a contagem
