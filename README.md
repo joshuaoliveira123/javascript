@@ -1,7 +1,7 @@
 # javascript
  Repositório para estudar a linguagem JavaScript com o auxílio do Curso de JavaScript do Curso em Vídeo.
 
-### Links para ver os exercícios rodando na web | [exercicios-aula](https://github.com/joshuaoliveira123/javascript/tree/main/exercicios-aula)
+### Links para ver os exercícios das aulas rodando na web | [exercicios-aula](https://github.com/joshuaoliveira123/javascript/tree/main/exercicios-aula)
 
 #### aula01
 
