@@ -36,3 +36,12 @@ function tabuada() {
         }
     }
 }
+
+function exemple() {
+    let variavel1 = document.querySelector('#demonstracao')
+    let variavel2 = document.querySelector('.box-container')
+
+    if (testaSeEscreveu(variavel1)) {
+        mostraNumeros(variavel1, variavel2)
+    }
+}
