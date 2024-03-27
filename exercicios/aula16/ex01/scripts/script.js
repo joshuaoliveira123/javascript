@@ -3,9 +3,15 @@ let outputSelect = document.querySelector('#select')
 let outputResult = document.querySelector('#result')
 let valores = []
 
+// Permite enviar as coisas clicando ENTER!!
+inputNumber.addEventListener('keyup', (evento) => {
+    if (evento.key === 'Enter') {
+        adicionar()
+    }
+})
+
 function verificaNumero(n) {
     let bool = (n.length != 0 && n >= 1 && n <= 100)
-    console.log('Verificador de numero, Funciou!')
     return bool 
 }
 
