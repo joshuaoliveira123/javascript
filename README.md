@@ -16,6 +16,7 @@
 ---
 
 #### aula04
+
 * [index](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula04/index.html)
 
 ---
@@ -60,3 +61,13 @@
 #### aula14
 
 ---
+
+#### aula15
+
+---
+
+#### aula16
+
+---
+
+#### aula17
