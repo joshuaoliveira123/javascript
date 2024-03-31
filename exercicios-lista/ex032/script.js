@@ -24,9 +24,8 @@ function jogo() {
         output.appendChild(criarParagrafo(`Número escolhido ${num}`))
         output.appendChild(criarParagrafo(`Número sorteado: ${numSorteio}`))
     
-        if (numSorteio === num) {
-            output.appendChild(criarParagrafo(`Você jogou ${num} e ACERTOU!`))
-        }
+        const teste = num === numSorteio ? 'Você ACERTOU!' : 'Você ERROU!'
+        output.appendChild(criarParagrafo(teste))
     
         focoInput()
     }
