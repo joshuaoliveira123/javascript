@@ -11,8 +11,6 @@ inputNumber.addEventListener('keyup', (evento) => {
 })
 
 function jogo() {
-    const p1 = document.createElement('p')
-    const p2 = document.createElement('p')
     const numSorteio = sorteio()
     const num = Number(inputNumber.value)
 
@@ -23,20 +21,22 @@ function jogo() {
     } else {
         output.innerHTML = ''
     
-        p1.innerHTML = `Número escolhido: ${num}`
-        p2.innerHTML = `Número sorteado: ${numSorteio}`
-        output.appendChild(p1)
-        output.appendChild(p2)
+        output.appendChild(criarParagrafo(`Número escolhido ${num}`))
+        output.appendChild(criarParagrafo(`Número sorteado: ${numSorteio}`))
     
         if (numSorteio === num) {
-            const p3 = document.createElement('p')
-            p3.innerHTML = `Você jogou ${num} e ACERTOU!`
-            output.appendChild(p3)
+            output.appendChild(criarParagrafo(`Você jogou ${num} e ACERTOU!`))
         }
     
         focoInput()
     }
 
+}
+
+function criarParagrafo(txt) {
+    const paragrafo = document.createElement('p')
+    paragrafo.innerHTML = txt
+    return paragrafo
 }
 
 function focoInput() {
