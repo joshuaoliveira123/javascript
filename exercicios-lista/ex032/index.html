@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número!</title>
+    <link rel="stylesheet" href="../../exercicios/modelo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Adivinhe o número!</h1>
+    </header>
+    <main class="main">
+        <div id="BOX1" class="box">
+            <p>
+                <label for="numero">Número (1 a 5):</label>
+                <input type="number" name="nome" id="numero" min="1" max="5">
+                <input type="button" value="Enviar" onclick="jogo()">
+            </p>
+        </div>
+        <p>
+            RESULTADO:
+        </p>
+        <div id="BOX2" class="box"></div>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/joshuaoliveira123" target="_blank" rel="author">joshuaoliveira123</a> com o auxílio do <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">Gustavo Guanabara do Curso em Vídeo.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
