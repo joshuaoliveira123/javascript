@@ -7,8 +7,8 @@
 
 const output = document.querySelector('#BOX2')
 const pessoa = {
-    homens: [0],
-    mulheres: [0]
+    homens: [],
+    mulheres: []
 }
 
 function main() {
@@ -53,12 +53,42 @@ function mediaPesoMulheres(peso) {
     media = soma / elementos
     return media.toFixed(2)
 }
-
-// TODO: fazer o QUESTIONARIO para pegar os dados das pessoas!
+// TODO: GAMBIARRAS
 function verificacoes(pessoa) {
-    // QUESTIONARIO
-    const teste = (true) && (true) && (true) ? true : false
-    return teste
+    for (let i = 0; i < 3; i++) {
+        let s
+        let p
+        let numP
+        do {
+            s = prompt(`Sexo pessoa ${i+1} | [M/F]`)
+
+            if (s.toUpperCase() === 'M') {
+                console.log(s)
+            } else if(s.toUpperCase() === 'F') {
+                console.log(s)
+            } else {
+                alert('ERROR | Escolha entre [M/F] sendo [M]asculino e [F]eminino!')
+                s = 'error'
+            }
+        } while (s === 'error')
+
+        do {
+            p = prompt(`Peso pessoa ${i+1} | Quilogramas(kg)`)
+            numP = (p > 0) ? Number(p.valueOf()) : 0
+
+            if (numP <= 2 || numP >= 500) {
+                alert(`ERROR | Peso inválido, ninguém pesa ${numP} kg`)
+                numP = 0
+            }
+
+            if (s.toUpperCase() === 'M' && numP !== 0) {
+                pessoa.homens.push(numP)
+            } else if (s.toUpperCase() === 'F' && numP !== 0){
+                pessoa.mulheres.push(numP)
+            }
+        } while (numP === 0)
+    }
+    return true
 }
 
 function criarParagrafo(txt) {
