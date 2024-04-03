@@ -55,7 +55,7 @@ function mediaPesoMulheres(peso) {
 }
 // TODO: GAMBIARRAS
 function verificacoes(pessoa) {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 8; i++) {
         let s
         let p
         let numP
