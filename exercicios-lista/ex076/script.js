@@ -3,10 +3,10 @@
 // gerados na tela.
 
 const array = []
+const randomNumber = (max, min=0) => Math.floor(Math.random() * (max - min) + min)
 
 for (let i = 0; i < 7; i++) {
-    const randomNumber = Math.floor(Math.random() * 10)
-    array[i] = randomNumber /* entre 0 a 10 */
+    array[i] = randomNumber(1,20)
 }
 
 console.log(array)
