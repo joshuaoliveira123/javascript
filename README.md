@@ -37,16 +37,16 @@
 
 #### aula10
 
-* [index](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula09/index.html)
-* [index-1](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula09/index-1.html)
-* [index-2](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula09/index-2.html)
+* [index](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula10/index.html)
+* [index-1](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula10/index-1.html)
+* [index-2](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula10/index-2.html)
 
 ---
 
 #### aula11
 
-* [index](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula09/index.html)
-* [index-1](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula09/index-1.html)
+* [index](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula11/index.html)
+* [index-1](https://joshuaoliveira123.github.io/javascript/exercicios-aula/aula11/index-1.html)
 
 ---
 
