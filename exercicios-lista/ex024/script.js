@@ -12,11 +12,11 @@ const passagem = function(distancia) {
     return distancia * valorPorKm
 }
 
-const moedaBRL = { style: 'currency', currency: 'BRL' }
+const moedaBRL = require('../../exercicios/dinheiro-brl/moeda')
 
-const viagem1 = passagem(77).toLocaleString('pt-br', moedaBRL)
-const viagem2 = passagem(260).toLocaleString('pt-br', moedaBRL)
-const viagem3 = passagem(197).toLocaleString('pt-br', moedaBRL)
+const viagem1 = passagem(77).toLocaleString('pt-br', moedaBRL.moeda('brl'))
+const viagem2 = passagem(260).toLocaleString('pt-br', moedaBRL.moeda('brl'))
+const viagem3 = passagem(197).toLocaleString('pt-br', moedaBRL.moeda('brl'))
 
 console.log(`Total a pagar na 1ª viagem: ${viagem1}`)
 console.log(`Total a pagar na 2ª viagem: ${viagem2}`)
