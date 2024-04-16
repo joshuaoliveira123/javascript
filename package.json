@@ -1,0 +1,13 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Repositório para estudar a linguagem JavaScript com o auxílio do Curso de JavaScript do Curso em Vídeo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
