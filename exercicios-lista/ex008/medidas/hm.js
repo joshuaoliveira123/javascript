@@ -1,6 +1,2 @@
 // hectometro (hm)
-module.exports = {
-    conversao(m) {
-        return m / 100
-    }
-}
+export const hm = m => m / 100

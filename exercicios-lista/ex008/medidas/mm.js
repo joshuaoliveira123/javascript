@@ -1,6 +1,2 @@
 // milimetros (mm)
-module.exports = {
-    conversao(m) {
-        return m * 1000
-    }
-}
+export const mm = m => m * 1000

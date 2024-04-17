@@ -1,6 +1,2 @@
 // decimetro (dm)
-module.exports = {
-    conversao(m) {
-        return m * 10
-    }
-}
+export const dm = m => m * 10

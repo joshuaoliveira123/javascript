@@ -1,6 +1,2 @@
 // centimetros (cm)
-module.exports = {
-    conversao(m) {
-        return m * 100
-    }
-}
+export const cm = m => m * 100

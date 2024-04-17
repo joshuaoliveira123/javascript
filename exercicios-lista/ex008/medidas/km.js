@@ -1,6 +1,2 @@
 // quilometro (km)
-module.exports = {
-    conversao(m) {
-        return m / 1000
-    }
-}
+export const km = m => m / 1000

@@ -1,6 +1,2 @@
 // decametro (dam)
-module.exports = {
-    conversao(m) {
-        return m / 10
-    }
-}
+export const dam = m => m / 10
