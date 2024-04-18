@@ -1,8 +1,6 @@
-module.exports = {
-    moeda(tipoMoeda) {
-        return {
-            style: 'currency',
-            currency: `${tipoMoeda}`
-        }
+export const moeda = function(tipoMoeda) {
+    return {
+        style: 'currency',
+        currency: `${tipoMoeda}`
     }
 }
