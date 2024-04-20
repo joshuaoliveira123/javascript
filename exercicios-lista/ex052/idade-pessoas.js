@@ -6,12 +6,7 @@
 
 import { randomNum } from '../../exercicios/numero-aleatorio.js'
 import { linha } from '../../exercicios/linha.js'
-
-const media = (nums) => {
-    let sum = 0
-    nums.forEach(n => sum += n)
-    return sum / nums.length
-}
+import { media } from '../../exercicios/media.js'
 
 const main = function(idades = [0]) {
     const med = media(idades)
