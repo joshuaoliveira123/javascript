@@ -8,24 +8,9 @@
 import { media } from '../../exercicios/media.js'
 import { randomNum, randomMF } from '../../exercicios/numero-aleatorio.js'
 
-const pessoas = {
-    pessoa1: {
-        idade: randomNum(100),
-        sexo: randomMF()
-    },
-    pessoa2: {
-        idade: randomNum(100),
-        sexo: randomMF()
-    },
-    pessoa3: {
-        idade: randomNum(100),
-        sexo: randomMF()
-    },
-    pessoa4: {
-        idade: randomNum(100),
-        sexo: randomMF()
-    },
-    pessoa5: {
+const pessoas = {}
+for (let n = 1; n <= 5; n++) {
+    pessoas[`pessoa${n}`] = {
         idade: randomNum(100),
         sexo: randomMF()
     }
