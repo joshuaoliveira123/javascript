@@ -1,7 +1,7 @@
-const readline = require('node:readline')
-const { stdin: input, stdout: output} = require('node:process')
+import { createInterface } from 'node:readline'
+import { stdin as input, stdout as output } from 'node:process'
 
-const rl = readline.createInterface({ input, output })
+const rl = createInterface({ input, output })
 
 rl.question(
     'Diga seu nome: ', res => {
