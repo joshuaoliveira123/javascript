@@ -8,15 +8,17 @@ const { stdin: input, stdout: output } = require('node:process')
 const rl = readline.createInterface({ input, output })
 
 function jogo(vidas = 4) {
-    // criar numero-aleatorio 1 a 10
+    const numAleatorio = Math.floor(Math.random() * ((10 + 1) - 1) + 1)
     while (vidas > 0) {
         // limpar tela
-        // mostrar quantidade de vidas restantes
-        // chute
-            // se acertar SAIR DO LOOP
-            // se errar vidas--
+        console.log(`VIDAS: ${vidas}`)
+        // chute | rl.question(pergunta, callback)
+            // callback:
+                // se acertar SAIR DO LOOP
+                // se errar vidas--
     }
-    // conferir se existem vidas (vida > 0)
-        // se sim, VENCEU
-        // se não, PERDEU
+    const resultado = (vidas > 0) ? 'VENCEU' : 'PERDEU'
+    console.log(resultado)
 }
+
+jogo()
