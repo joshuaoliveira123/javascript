@@ -7,7 +7,7 @@ export const criarPessoas = function(n = 10) {
             peso: randomNum(200, 30),
             idade: randomNum(100),
             sexo: randomMF(),
-            altura: randomNum(220, 100) / 100,
+            altura: randomNum(220, 100) / 100
         }
     }
     return pessoas
