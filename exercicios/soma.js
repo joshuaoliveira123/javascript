@@ -1,0 +1,1 @@
+export const soma = (n) => n.reduce((a, b) => a + b)
