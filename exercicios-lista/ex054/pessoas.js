@@ -6,15 +6,9 @@
 //  d) Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg.
 
 import { media } from '../../exercicios/media.js'
-import { randomNum } from '../../exercicios/numero-aleatorio.js'
+import { criarPessoas } from '../../exercicios/pessoas.js'
 
-const pessoas = {}
-for (let n = 1; n <= 7; n++) {
-    pessoas[`pessoa${n}`] = {
-        peso: randomNum(200,30),
-        altura: randomNum(230,120)
-    }
-}
+const pessoas = criarPessoas(7)
 
 const infoPessoas = function(pessoas) {
     const alt = []
@@ -26,15 +20,14 @@ const infoPessoas = function(pessoas) {
         alt.push(pessoas[pessoa].altura)
 
         pessoas90kg += (pessoas[pessoa].peso > 90) ? 1 : 0
-        pessoas50menos160 += (pessoas[pessoa].peso < 50 && pessoas[pessoa].altura < 160) ? 1 : 0
-        pessoas100mais190 += (pessoas[pessoa].peso > 100 && pessoas[pessoa].altura > 190) ? 1 : 0
+        pessoas50menos160 += (pessoas[pessoa].peso < 50 && pessoas[pessoa].altura < 1.60) ? 1 : 0
+        pessoas100mais190 += (pessoas[pessoa].peso > 100 && pessoas[pessoa].altura > 1.90) ? 1 : 0
     }
 
-    console.log(`Média altura: ${media(alt)} cm`)
+    console.log(`Média altura: ${media(alt).toFixed(2)} m`)
     console.log(`Pessoas +90kg: ${pessoas90kg}`)
-    console.log(`Pessoas -50kg e -160cm: ${pessoas50menos160}`)
-    console.log(`Pessoas +100kg e +190cm: ${pessoas100mais190}`)
-    
+    console.log(`Pessoas -50kg e -1.60m: ${pessoas50menos160}`)
+    console.log(`Pessoas +100kg e +1.90m: ${pessoas100mais190}`)
 }
 
 infoPessoas(pessoas)
