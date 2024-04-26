@@ -4,3 +4,5 @@ export const moeda = function(tipoMoeda) {
         currency: `${tipoMoeda}`
     }
 }
+
+export const toMoeda = (str, len = 'pt-br', din = 'brl') => str.toLocaleString(len, moeda(din))
