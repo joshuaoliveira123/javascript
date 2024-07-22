@@ -13,9 +13,8 @@ function getMonthName(mo) {
 }
 
 try {
-    // exemplo
-    let myMonth = 15
-    let monthName = getMonthName(myMonth)
+    let myMonth = 15 // exemplo
+    const monthName = getMonthName(myMonth)
 } catch (err) {
     console.log(err)
     console.log(`ERROR | ${err._name}: ${err._mensagem}`)
